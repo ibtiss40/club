@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:requestLegacyExternalStorage="true">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+
+        android:id="@+id/ImageLogin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#CABCA8"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".27"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0" />
+
+    <ImageButton
+        android:id="@+id/logo"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="70dp"
+        android:background="@drawable/imagec"
+        android:foregroundGravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/frameLayout"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/frameLayout"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint"
+        android:layout_width="match_parent"
+        android:layout_height="370dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="90dp"
+        android:background="@drawable/bg_profil"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1">
+        <ImageView
+            android:id="@+id/namelogo"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintTop_toTopOf="@id/constraint"
+            android:src="@drawable/ic_baseline_account_circle_24"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintTop_toTopOf="@id/constraint"
+            android:text="rami ibtissam"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            app:layout_constraintStart_toEndOf="@id/namelogo" />
+
+        <ImageView
+            android:id="@+id/adresslogo"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/adress"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/namelogo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="berkaneeeeee"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            app:layout_constraintStart_toEndOf="@id/adresslogo"
+            app:layout_constraintTop_toBottomOf="@id/namelogo" />
+
+        <ImageView
+            android:id="@+id/phonelogo"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/phone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/adresslogo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="0606063028"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            app:layout_constraintStart_toEndOf="@id/phonelogo"
+            app:layout_constraintTop_toBottomOf="@id/adresslogo" />
+        <ImageView
+            android:id="@+id/emaillogo"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/email"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/phonelogo" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="basma@gmail.com"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            app:layout_constraintStart_toEndOf="@id/phonelogo"
+            app:layout_constraintTop_toBottomOf="@id/phonelogo" />
+        <Button
+            android:id="@+id/btnlogout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/bg_button"
+            android:text="Deconexion"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintWidth_percent=".7" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+<Button
+    android:id="@+id/textkolch"
+    android:layout_width="60dp"
+    android:layout_height="wrap_content"
+    android:text="test"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

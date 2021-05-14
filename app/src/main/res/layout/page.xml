@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+
+        android:id="@+id/ImageLogin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintHeight_percent=".27"
+        android:scaleType="centerCrop"
+        app:layout_constraintVertical_bias="0"
+        android:background="#CABCA8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+        <ImageView
+            android:id="@+id/logo"
+            android:src="@drawable/chevale"
+            android:layout_height="350dp"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            app:layout_constraintVertical_bias="1"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:background="@drawable/bg_login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".78"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1" />
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:hint="Email"
+        android:paddingLeft="20dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/bg_editext"
+        android:layout_marginTop="100dp"
+        android:drawableLeft="@drawable/email"
+        android:drawablePadding="16dp"
+        app:layout_constraintWidth_percent=".8"
+
+
+        />
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintVertical_bias="0"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent=".8"
+        app:layout_constraintTop_toBottomOf="@id/email"
+        android:background="@drawable/bg_editext"
+        android:drawableLeft="@drawable/password"
+        android:drawablePadding="1dp"
+        android:inputType="textPassword"
+        />
+    <CheckBox
+        android:id="@+id/checkbox_meat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onCheckboxClicked"
+        app:layout_constraintEnd_toStartOf="@id/resterconn"
+        app:layout_constraintTop_toBottomOf="@id/password"
+        android:layout_marginTop="20dp"
+        />
+<TextView
+    android:id="@+id/resterconn"
+  android:layout_marginTop="30dp"
+    android:text="Rester connecter"
+    android:textColor="#CABCA8"
+    app:layout_constraintTop_toBottomOf="@id/password"
+    android:layout_height="wrap_content"
+    app:layout_constraintStart_toStartOf="parent"
+    android:textSize="20dp"
+    android:layout_width="wrap_content"
+    android:textStyle="bold"
+    android:layout_marginStart="85dp" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Connexion"
+        app:layout_constraintWidth_percent=".7"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/password"
+        android:textStyle="bold"
+        android:background="@drawable/bg_button"
+        />
+
+    <TextView
+        android:id="@+id/inscription"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="20dp"
+        android:text="Creer mon compte "
+        android:textColor="#603A17"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btnLogin"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="18dp"
+        android:layout_width="wrap_content"
+        android:linksClickable="true"
+        />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <menu xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+        <item
+            android:id="@+id/lundi"
+            android:enabled="true"
+            android:title="lundi"
+            app:showAsAction="ifRoom"
+            android:icon="@drawable/time"/>
+        <item
+            android:id="@+id/mardi"
+            android:enabled="true"
+            android:title="mardi"
+            app:showAsAction="ifRoom" />
+        <item
+            android:id="@+id/mercredi"
+            android:enabled="true"
+            android:title="mercredi"
+            app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/jeudi"
+        android:enabled="true"
+        android:title="jeudi"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/vendredi"
+        android:enabled="true"
+        android:title="vendredi"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/samedi"
+        android:enabled="true"
+        android:title="samedi"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/dimanche"
+        android:enabled="true"
+        android:title="dimanche"
+        app:showAsAction="ifRoom" />
+</menu>
